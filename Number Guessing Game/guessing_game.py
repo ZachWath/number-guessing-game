@@ -36,8 +36,17 @@ def check_number(number):
                 in_range = number
                 break
         except ValueError:
-            number = int (input ("please choose a number , not a word...  "))
-            continue   
+            print ("""HEY, LOOK BUDDY!!!\n 
+            I know that following instructions is difficult...\n
+            But I really need you to choose a number...\n
+            Not a letter...\n
+            Or a word...\n
+            Just a whole number ...\n
+            You know, like 1, 2, 3, etc..\n
+            Now please try again...    """)
+            continue  
+       
+            
     return int(in_range)
 
 
